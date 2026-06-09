@@ -9,7 +9,7 @@ get_header();
         <!-- Swiper -->
         <div class="swiper mySwipera">
             <div class="swiper-wrapper">
-                <div class="swiper-slide">
+                <div class="swiper-slide slide-01">
                     <div class="w-full overflow-hidden relative">
                         <?php
                         $image = get_field("oneslider");
@@ -29,7 +29,7 @@ get_header();
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide slide-02">
                     <div class="w-full overflow-hidden relative">
                         <?php
                         $image = get_field("secondslider");
@@ -50,7 +50,7 @@ get_header();
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide slide-03">
                     <div class="w-full overflow-hidden relative">
                         <?php
                         $image = get_field("thirdslider");
@@ -70,13 +70,13 @@ get_header();
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide slide-04">
                     <div class="w-full overflow-hidden relative">
                         <?php
                         $image = get_field("fourslider");
                         ?>
                         <img src="<?= $image['url'] ?>" alt="<?= $image['alt'] ?>">
-                        <div class="absolute w-full h-full flex flex-wrap items-center justify-start z-10 top-0 left-0 ">
+                        <div class="absolute w-full h-full flex flex-wrap items-center justify-item z-10 top-0 left-0 ">
                             <div class="w-1/2 md:w-1/2 flex flex-col paddig-custom items-align justify-center h-full">
                                 <?= the_field("sliderfourthtext") ?>
                                 <?php
@@ -90,13 +90,13 @@ get_header();
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide slide-05">
                     <div class="w-full overflow-hidden relative">
                         <?php
                         $image = get_field("fiveslider");
                         ?>
                         <img src="<?= $image['url'] ?>" alt="<?= $image['alt'] ?>">
-                        <div class="absolute w-full h-full flex flex-wrap items-center justify-end z-10 top-0 left-0 ">
+                        <div class="absolute w-full h-full flex flex-wrap items-center justify-item z-10 top-0 left-0 ">
                             <div class="w-1/2 md:w-1/2 flex flex-col paddig-custom items-align justify-center h-full">
                                 <?= the_field("sliderfifthtext") ?>
                                 <?php
@@ -110,37 +110,17 @@ get_header();
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide slide-06">
                     <div class="w-full overflow-hidden relative">
                         <?php
                         $image = get_field("sixslider");
                         ?>
                         <img src="<?= $image['url'] ?>" alt="<?= $image['alt'] ?>">
-                        <div class="absolute w-full h-full flex flex-wrap items-center justify-end z-10 top-0 left-0 ">
+                        <div class="absolute w-full h-full flex flex-wrap items-center justify-item z-10 top-0 left-0 ">
                             <div class="w-1/2 md:w-1/2 flex flex-col paddig-custom items-align justify-center h-full">
                                 <?= the_field("slidersixthtext") ?>
                                 <?php
                                 $link = get_field("slidersixthbtn");
-                                $post_url = get_permalink($link->ID);
-                                ?>
-                                <a href="<?= get_permalink($link->ID) ?>" class="slider-btn">
-                                    <?= get_the_title($link->ID) ?>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="w-full overflow-hidden relative">
-                        <?php
-                        $image = get_field("sevenslider");
-                        ?>
-                        <img src="<?= $image['url'] ?>" alt="<?= $image['alt'] ?>">
-                        <div class="absolute w-full h-full flex flex-wrap items-center justify-end z-10 top-0 left-0">
-                            <div class="w-1/2 md:w-1/2 flex flex-col paddig-custom items-align justify-center h-full">
-                                <?= the_field("sliderseventhtext") ?>
-                                <?php
-                                $link = get_field("sliderseventhbtn");
                                 $post_url = get_permalink($link->ID);
                                 ?>
                                 <a href="<?= get_permalink($link->ID) ?>" class="slider-btn">
@@ -164,7 +144,7 @@ get_header();
         <!-- Swiper -->
         <div class="swiper mySwiperamob">
             <div class="swiper-wrapper">
-                <div class="swiper-slide">
+                <div class="swiper-slide slide-01">
                     <div class="w-full overflow-hidden relative">
                         <?php
                         $image = get_field("mobileoneslider");
@@ -184,7 +164,7 @@ get_header();
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide slide-02">
                     <div class="w-full overflow-hidden relative">
                         <?php
                         $image = get_field("mobilesecondslider");
@@ -205,7 +185,7 @@ get_header();
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide slide-03">
                     <div class="w-full overflow-hidden relative">
                         <?php
                         $image = get_field("mobilethirdslider");
@@ -225,7 +205,7 @@ get_header();
                          </div>
                     </div>
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide slide-04">
                     <div class="w-full overflow-hidden relative">
                         <?php
                         $image = get_field("mobileforthslider");
@@ -245,7 +225,7 @@ get_header();
                         </div>    
                     </div>
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide slide-05">
                     <div class="w-full overflow-hidden relative">
                         <?php
                         $image = get_field("mobilefiveslider");
@@ -266,7 +246,7 @@ get_header();
 
                     </div>
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide slide-06">
                     <div class="w-full overflow-hidden relative">
                         <?php
                         $image = get_field("mobilesixthslider");
@@ -274,7 +254,7 @@ get_header();
                         <img src="<?= $image['url'] ?>" alt="<?= $image['alt'] ?>">
                         <div class="absolute w-full h-full flex flex-wrap items-end justify-end z-10 top-0 left-0 pb-28">
                             <div class="w-full p-4">
-                                 <?= the_field("slidersixthtext") ?>
+                                <?= the_field("slidersixthtext") ?>
                                 <?php
                                 $link = get_field("slidersixthbtn");
                                 $post_url = get_permalink($link->ID);
@@ -286,30 +266,10 @@ get_header();
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide">
-                    <div class="w-full overflow-hidden relative">
-                        <?php
-                        $image = get_field("mobileseventhslider");
-                        ?>
-                        <img src="<?= $image['url'] ?>" alt="<?= $image['alt'] ?>">
-                        <div class="absolute w-full h-full flex flex-wrap items-end justify-end z-10 top-0 left-0 pb-28">
-                            <div class="w-full p-4">
-                              <?= the_field("sliderseventhtext") ?>
-                                <?php
-                                $link = get_field("sliderseventhbtn");
-                                $post_url = get_permalink($link->ID);
-                                ?>
-                                <a href="<?= get_permalink($link->ID) ?>" class="slider-btn">
-                                    <?= get_the_title($link->ID) ?>
-                                </a>
-                            </div>
-                        </div>    
-                    </div>
-                </div>
             </div>
             <!-- <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div> -->
-            <div class="swiper-pagination"></div>
+            <!-- <div class="swiper-pagination"></div> -->
         </div>
     </section>
     <section class="w-full mb-8 bg-semi-dark">
@@ -335,7 +295,7 @@ get_header();
                 ?>
                 <img src="<?= $image['url'] ?>" alt="<?= $image['alt'] ?>">
             </div>
-            <div class="w-full md:w-90/100 px-8 md:px-10 lg:px-15 xl:px-30 2xl:px-27 parent-no-margin">
+            <div class="w-full md:w-90/100 px-8 md:px-10 lg:px-15 xl:px-30 2xl:px-27 parent-no-margin my-8">
                 <?= the_field("secondparttext") ?>
             </div>        
         </div>
@@ -966,7 +926,7 @@ get_header();
     </div>
         </div>
     </section>
-    <section class="my-8 w-full projects">
+    <section class="my-8 w-full projects" id="project">
         <div class="my-8 w-full md:w-80/100 mx-auto">
             <h2>
                 <?= the_field("projecttitle") ?>
@@ -1082,7 +1042,187 @@ get_header();
                                     <div class="card-over">
                                         <img src="<?= get_template_directory_uri() ?>/assets/images/projects/project-04.png" alt="project">
                                         <div class="w-full">
-                                            <h2>
+                                            <h2 class="mt-12 md:mt-1">
+                                                <?= get_the_title($link->ID) ?>
+                                            </h2>
+                                            <div>
+                                                <?= get_the_excerpt($link->ID) ?>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <?php
+                            $link = get_field("fifthproject");
+
+                            ?>
+                            <a href="<?= get_permalink($link->ID) ?>">
+                                <div class="card-over-parent">
+                                    <?php
+                                    if ($link) {
+                                        $post_url = get_permalink($link->ID);
+                                        $url = get_the_post_thumbnail_url($link->ID, 'large');
+                                    ?>
+                                        <img src="<?= esc_url($url) ?>" alt="<?= esc_attr(get_the_title()); ?>" loading="lazy">
+                                    <?php
+                                    }
+                                    ?>
+                                    <div class="card-over">
+                                        <img src="<?= get_template_directory_uri() ?>/assets/images/projects/project-04.png" alt="project">
+                                        <div class="w-full">
+                                            <h2 class="mt-12 md:mt-1">
+                                                <?= get_the_title($link->ID) ?>
+                                            </h2>
+                                            <div>
+                                                <?= get_the_excerpt($link->ID) ?>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <?php
+                            $link = get_field("sixthproject");
+
+                            ?>
+                            <a href="<?= get_permalink($link->ID) ?>">
+                                <div class="card-over-parent">
+                                    <?php
+                                    if ($link) {
+                                        $post_url = get_permalink($link->ID);
+                                        $url = get_the_post_thumbnail_url($link->ID, 'large');
+                                    ?>
+                                        <img src="<?= esc_url($url) ?>" alt="<?= esc_attr(get_the_title()); ?>" loading="lazy">
+                                    <?php
+                                    }
+                                    ?>
+                                    <div class="card-over">
+                                        <img src="<?= get_template_directory_uri() ?>/assets/images/projects/project-04.png" alt="project">
+                                        <div class="w-full">
+                                            <h2 class="mt-12 md:mt-1">
+                                                <?= get_the_title($link->ID) ?>
+                                            </h2>
+                                            <div>
+                                                <?= get_the_excerpt($link->ID) ?>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <?php
+                            $link = get_field("seventhproject");
+
+                            ?>
+                            <a href="<?= get_permalink($link->ID) ?>">
+                                <div class="card-over-parent">
+                                    <?php
+                                    if ($link) {
+                                        $post_url = get_permalink($link->ID);
+                                        $url = get_the_post_thumbnail_url($link->ID, 'large');
+                                    ?>
+                                        <img src="<?= esc_url($url) ?>" alt="<?= esc_attr(get_the_title()); ?>" loading="lazy">
+                                    <?php
+                                    }
+                                    ?>
+                                    <div class="card-over">
+                                        <img src="<?= get_template_directory_uri() ?>/assets/images/projects/project-04.png" alt="project">
+                                        <div class="w-full">
+                                            <h2 class="mt-12 md:mt-1">
+                                                <?= get_the_title($link->ID) ?>
+                                            </h2>
+                                            <div>
+                                                <?= get_the_excerpt($link->ID) ?>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <?php
+                            $link = get_field("eighthproject");
+
+                            ?>
+                            <a href="<?= get_permalink($link->ID) ?>">
+                                <div class="card-over-parent">
+                                    <?php
+                                    if ($link) {
+                                        $post_url = get_permalink($link->ID);
+                                        $url = get_the_post_thumbnail_url($link->ID, 'large');
+                                    ?>
+                                        <img src="<?= esc_url($url) ?>" alt="<?= esc_attr(get_the_title()); ?>" loading="lazy">
+                                    <?php
+                                    }
+                                    ?>
+                                    <div class="card-over">
+                                        <img src="<?= get_template_directory_uri() ?>/assets/images/projects/project-04.png" alt="project">
+                                        <div class="w-full">
+                                            <h2 class="mt-12 md:mt-1">
+                                                <?= get_the_title($link->ID) ?>
+                                            </h2>
+                                            <div>
+                                                <?= get_the_excerpt($link->ID) ?>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <?php
+                            $link = get_field("ninethproject");
+
+                            ?>
+                            <a href="<?= get_permalink($link->ID) ?>">
+                                <div class="card-over-parent">
+                                    <?php
+                                    if ($link) {
+                                        $post_url = get_permalink($link->ID);
+                                        $url = get_the_post_thumbnail_url($link->ID, 'large');
+                                    ?>
+                                        <img src="<?= esc_url($url) ?>" alt="<?= esc_attr(get_the_title()); ?>" loading="lazy">
+                                    <?php
+                                    }
+                                    ?>
+                                    <div class="card-over">
+                                        <img src="<?= get_template_directory_uri() ?>/assets/images/projects/project-04.png" alt="project">
+                                        <div class="w-full">
+                                            <h2 class="mt-12 md:mt-1">
+                                                <?= get_the_title($link->ID) ?>
+                                            </h2>
+                                            <div>
+                                                <?= get_the_excerpt($link->ID) ?>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <?php
+                            $link = get_field("tenthproject");
+
+                            ?>
+                            <a href="<?= get_permalink($link->ID) ?>">
+                                <div class="card-over-parent">
+                                    <?php
+                                    if ($link) {
+                                        $post_url = get_permalink($link->ID);
+                                        $url = get_the_post_thumbnail_url($link->ID, 'large');
+                                    ?>
+                                        <img src="<?= esc_url($url) ?>" alt="<?= esc_attr(get_the_title()); ?>" loading="lazy">
+                                    <?php
+                                    }
+                                    ?>
+                                    <div class="card-over">
+                                        <img src="<?= get_template_directory_uri() ?>/assets/images/projects/project-04.png" alt="project">
+                                        <div class="w-full">
+                                            <h2 class="mt-12 md:mt-1">
                                                 <?= get_the_title($link->ID) ?>
                                             </h2>
                                             <div>
@@ -1134,7 +1274,7 @@ get_header();
     <section class="mt-8! w-full bg-semi-dark py-4">
         <div class="w-full md:w-80/100 mx-auto">
             <div class="flex flex-wrap justify-between items-center">
-                <h2 class="w-full md:w-1/2 text-center md:text-left text-lg! md:text-2xl!">
+                <h2 class="w-full md:w-1/2 text-center md:text-right text-lg! md:text-2xl!">
                     <?= the_field("newstitle")   ?>
                 </h2>
                 <div class="flex justify-center md:justify-end items-center gap-4 w-full md:w-1/2">

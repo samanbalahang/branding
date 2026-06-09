@@ -47,6 +47,11 @@ if (! defined('ABSPATH')) {
 					<?php dynamic_sidebar("footer-widget-4"); ?>
 
 				<?php endif; ?>
+				<div class="social flex justify-start w-1/2 mr-auto">
+					<a href="#" class="mr-auto">
+						<img src="<?= get_template_directory_uri() ?>/assets/images/screenshot.png" alt="screenshot.png">
+					</a>
+				</div>	
 
 			</div>
 		</div>

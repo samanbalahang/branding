@@ -31,24 +31,6 @@ if (! defined('ABSPATH')) {
     <?php
     }
     ?>
-  
-        <link rel="stylesheet" href="<?= get_template_directory_uri() ?>/assets/css/swiper-bundle.min.css">
-        <link rel="stylesheet" href="<?= get_template_directory_uri() ?>/assets/css/animate.min.css">
-        <?php
-        $image = get_field("paralexbackground");
-        if($image){
-        ?>
-        <style>
-            .paralex {
-                background: url(<?= $image['url'] ?>);
-
-            }
-        </style>
-        <?php
-        }
-        ?>
-  
-
     <link rel="stylesheet" href="<?= get_template_directory_uri() ?>/assets/css/bala.css">
     <link rel="stylesheet" href="<?= get_template_directory_uri() ?>/assets/css/farzin.css">
 
@@ -57,7 +39,7 @@ if (! defined('ABSPATH')) {
             ?> -->
 </head>
 
-<body <?php astra_schema_body(); ?> <?php body_class("relative bg-primary portfolio"); ?>>
+<body <?php astra_schema_body(); ?> <?php body_class("relative bg-primary"); ?>>
     <header>
         <div class="mobile-menu">
             <div id="black"></div>
@@ -98,17 +80,17 @@ if (! defined('ABSPATH')) {
             </div>
         </div>
         <div class="desktop-menu">
-            <div class="flex flex-col md:flex-row gap-4 items-center">
-                <div class="menu-patent">
+            <div class="flex flex-col md:flex-row gap-4 items-start md:items-center">
+                <div class="menu-patent w-full">
                     <div class="menu btn7" data-menu="7">
                         <div class="icon-E"></div>
                         <div class="icon-X"></div>
                     </div>
                 </div>
                 <div class="flex items-center">
-                    <h1 class="hidden md:block site-logo">
-                        <?php
-                        // ۱. بررسی اینکه آیا لوگویی تعریف شده است یا خیر
+                   <div class="hidden md:block site-logo">
+                   <?php 
+                   // ۱. بررسی اینکه آیا لوگویی تعریف شده است یا خیر
                         if (has_custom_logo()) {
 
                             // ۲. دریافت اطلاعات لوگو (خروجی یک آرایه است)
@@ -126,7 +108,7 @@ if (! defined('ABSPATH')) {
                                     <img src="<?php echo esc_url($logo[0]); ?>"
                                         width="<?php echo esc_attr($logo[1]); ?>"
                                         height="<?php echo esc_attr($logo[2]); ?>"
-                                        alt="<?= the_title() ?>">
+                                        alt="<?php bloginfo('name'); ?>">
                                 </a>
 
 
@@ -134,18 +116,18 @@ if (! defined('ABSPATH')) {
                             }
                         }
                         ?>
-                    </h1>
+                    </div>
                     <?php
                     $args = array(
                         'container' => false,
-                        'theme_location' => 'primary',
+                        'theme_location' => 'secondary_menu',
                         'items_wrap' => '<ul class="primary">%3$s</ul>',
                     );
                     wp_nav_menu($args);
                     ?>
                 </div>
             </div>
-            <div class="w-10/100 md:w-35/100 lg:w-35/100 xl:w-20/100 2xl:w-12/100">
+            <div class="w-66/100 md:w-54/100 lg:w-35/100 xl:w-20/100 2xl:w-13/100">
                 <a href="#" class="btn header-btn">
                     مشاوره رایگان
                 </a>

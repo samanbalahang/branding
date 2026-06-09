@@ -11,6 +11,34 @@ document.addEventListener('DOMContentLoaded', () => {
     let siteurl = window.location.href;
     let headerImage;
     let oldsrc;
+    let hrefs;
+    let sectionplace;
+    let menusectionone;
+    let menuopenet;
+    let mobileoldsrc;
+    let end;
+    let primaryMenu = document.querySelector(".primary");
+    if (primaryMenu) {
+        let menus = primaryMenu.querySelectorAll("li a");
+        if (menus.length > 0) {
+            menus.forEach(menu => {
+                menu.addEventListener("click", e => {
+                    hrefs = menu.getAttribute("href");
+                    if (hrefs[0] == "#") {
+                        e.preventDefault();
+                        sectionplace = hrefs.substring(1);
+                        menusectionone = document.getElementById(sectionplace);
+                        menusectionone.scrollIntoView({ behavior: "smooth" });
+                        menuopenet();
+                    } else {
+                        return
+                    }
+
+                })
+
+            })
+        }
+    }
     if (astscrolltop) {
         astscrolltop.addEventListener("click", (e) => {
             e.preventDefault();
@@ -24,12 +52,12 @@ document.addEventListener('DOMContentLoaded', () => {
         headerImage = dsitelogo.querySelector("img");
         oldsrc = headerImage.getAttribute("src");
     }
-    let mobileoldsrc = msitelogo.getAttribute("src");
-    let end;
+    mobileoldsrc = msitelogo.getAttribute("src");
+
     if (siteurl.search(".com") != -1) {
         end = parseInt(siteurl.search(".com") + 4);
         siteurl = siteurl.substring(0, end);
-        }
+    }
     if (screen.availWidth > 768) {
         if (desktopMenu) {
             window.addEventListener("scroll", () => {
@@ -102,20 +130,24 @@ document.addEventListener('DOMContentLoaded', () => {
         menu.forEach(item => {
             item.addEventListener("click", () => {
                 // item.classList.toggle("open");
-                if (desktopMenu) {
-                    desktopMenu.classList.toggle("open");
-                    if (dsitelogo) {
-                        if (headerImage) {
-                            headerImage.setAttribute("src", `${siteurl}/wp-content/images/logo_black.png`);
-                        }
-                    }
-                    if (black) {
-                        black.classList.toggle("open");
-                    }
-                }
+                menuopenet();
             })
         });
     }
+    menuopenet = () => {
+        if (desktopMenu) {
+            desktopMenu.classList.toggle("open");
+            if (dsitelogo) {
+                if (headerImage) {
+                    headerImage.setAttribute("src", `${siteurl}/wp-content/images/logo_black.png`);
+                }
+            }
+            if (black) {
+                black.classList.toggle("open");
+            }
+        }
+    }
+    
     var mySwipera = document.querySelector(".mySwipera");
     if (mySwipera) {
         var swiper = new Swiper(".mySwipera", {
@@ -141,9 +173,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
             },
-            pagination: {
-                el: ".swiper-pagination",
-            },
+            //  pagination: {
+            //    el: ".swiper-pagination",
+            //    },
             autoplay: {
                 delay: 2500,
                 disableOnInteraction: false,
@@ -196,10 +228,10 @@ document.addEventListener('DOMContentLoaded', () => {
             pagination: {
                 el: ".swiper-pagination",
             },
-            // autoplay: {
-            //     delay: 3500,
-            //     disableOnInteraction: false,
-            // },
+            autoplay: {
+                delay: 3500,
+                disableOnInteraction: false,
+            },
             breakpoints: {
                 640: {
                     slidesPerView: 1,
@@ -214,6 +246,15 @@ document.addEventListener('DOMContentLoaded', () => {
                     spaceBetween: 50,
                 },
             },
+        });
+        // توقف autoplay با هاور موس
+        mySwipera.addEventListener('mouseenter', function () {
+            swiper.autoplay.stop();
+        });
+
+        // از سرگیری autoplay با خارج شدن موس
+        mySwipera.addEventListener('mouseleave', function () {
+            swiper.autoplay.start();
         });
     }
     var mySwipera = document.querySelector(".Swipernews");

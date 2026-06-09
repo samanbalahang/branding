@@ -17,7 +17,7 @@ if (! defined('ABSPATH')) {
 
 ?>
 <footer class="text-white">
-	<div class="w-full md:w-80/100 mx-auto px-4">
+	<div class="w-full md:w-80/100 mx-auto px-4 mb-8">
 		<div class="flex flex-wrap">
 			<div class="w-full md:w-74/100">
 				<div class="flex flex-wrap">
@@ -47,6 +47,11 @@ if (! defined('ABSPATH')) {
 					<?php dynamic_sidebar("footer-widget-4"); ?>
 
 				<?php endif; ?>
+				<div class="social flex justify-start w-1/2 mr-auto">
+					<a href="#" class="block w-[100px] mr-auto">
+						<img src="<?= get_template_directory_uri() ?>/assets/images/screenshot.png" alt="screenshot.png">
+					</a>
+				</div>	
 
 			</div>
 		</div>
@@ -72,7 +77,6 @@ if (! defined('ABSPATH')) {
 	<path class="cls-1" d="M10.33,2.93l8.25,9.38c.23.25.54.39.88.39h0c1.01,0,1.54-1.19.87-1.94L11.22.4c-.47-.53-1.29-.53-1.75,0L.29,10.71c-.66.75-.13,1.94.88,1.94h0c.33,0,.65-.14.88-.39L10.33,2.93Z"/>
 	</svg>
 </a>
-	<script src="<?= get_template_directory_uri() ?>/assets/js/swiper-bundle.min.js"></script>
 	<script src="<?= get_template_directory_uri() ?>/assets/js/sambal.js"></script>
 
 <?php

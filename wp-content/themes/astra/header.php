@@ -99,8 +99,8 @@ if (! defined('ABSPATH')) {
             </div>
         </div>
         <div class="desktop-menu">
-            <div class="flex flex-col md:flex-row gap-4 items-center">
-                <div class="menu-patent">
+            <div class="flex flex-col md:flex-row gap-4 items-start md:items-center">
+                <div class="menu-patent w-full">
                     <div class="menu btn7" data-menu="7">
                         <div class="icon-E"></div>
                         <div class="icon-X"></div>
@@ -160,7 +160,7 @@ if (! defined('ABSPATH')) {
                     ?>
                 </div>
             </div>
-            <div class="w-10/100 md:w-54/100 lg:w-35/100 xl:w-20/100 2xl:w-12/100">
+            <div class="w-66/100 md:w-54/100 lg:w-35/100 xl:w-20/100 2xl:w-13/100">
                 <a href="#" class="btn header-btn">
                     مشاوره رایگان
                 </a>
