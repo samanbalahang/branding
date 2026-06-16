@@ -5,7 +5,7 @@ A modern and customizable WordPress branding and business theme built with **Wor
 ## 🌐 Live Demo
 
 **Demo Website:**
-https://samanbalahang.github.io/branding
+https://samanbalahang.github.io/branding/index.html
 
 ## ✨ Features
 
@@ -169,7 +169,7 @@ Happy coding! 🚀
 
 **نسخه نمایشی آنلاین:**
 
-https://samanbalahang.github.io/branding
+https://samanbalahang.github.io/branding/index.html
 
 ---
 
