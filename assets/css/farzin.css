@@ -1,0 +1,302 @@
+
+.mobile-slider .swiper-slide.slide-01 h2 {
+    color: white;
+}
+.mobile-slider .swiper-slide.slide-01 p {
+    color: white;
+}
+.main-section .swiper-slide.slide-01 h2 {
+    color: white;
+}
+.main-section .swiper-slide.slide-01 p {
+    color: white;
+}
+.main-section .swiper-slide.slide-01 .has-underline {
+    color: #3572cf;
+}
+.main-section .swiper-slide.slide-01 .has-underline::after {
+    background-color: #3572cf;
+}
+.main-section .mySwipera .swiper-slide.slide-01 .paddig-custom{
+   padding-right: 1rem;
+   padding-left: 1rem;
+}
+.main-section .mySwipera .swiper-slide.slide-01 .justify-item{
+    align-items    : flex-start;
+}
+
+.main-section .mySwipera .swiper-slide.slide-01 .items-align{
+	/* put it on top */
+   justify-content: flex-start !important;
+	padding-top:15rem
+	/* put it on center */
+/*    align-items: center !important; */
+	/* put it on botom */
+/* 	align-items: center !important; */
+}
+.main-section .mySwipera .swiper-slide.slide-01 .paddig-custom{
+   padding-right: 5rem;
+   padding-left: 5rem;
+}
+
+/* .main-section .mySwipera .swiper-slide:first-child p{
+   text-align: right;
+}
+.main-section .mySwipera .swiper-slide:first-child .justify-item{
+    justify-content: flex-start;
+}
+.main-section .mySwipera .swiper-slide:first-child .items-align{
+   align-items: flex-start;
+}
+.main-section .mySwipera .swiper-slide:first-child p{
+    text-align: right;
+} */
+
+
+
+.mobile-slider .swiper-slide.slide-02 h2 {
+    color: white;
+}
+
+.mobile-slider .swiper-slide.slide-02 p {
+    color: white;
+}
+.main-sectionr .swiper-slide.slide-02 h2 {
+    color: white;
+}
+
+.main-section .swiper-slide.slide-02 p {
+    color: white;
+}
+
+.main-section .swiper-slide.slide-02 .has-underline {
+    color: #e86902;
+}
+
+.main-section .swiper-slide.slide-02 .has-underline::after {
+    background-color: #e86902;
+}
+
+
+.main-section .mySwipera .swiper-slide.slide-02 .paddig-custom{
+   padding-right: 5rem;
+   padding-left: 5rem;
+}
+
+
+.main-section .mySwipera .swiper-slide.slide-02 .items-align{
+   align-items: flex-start;
+}
+.main-section .mySwipera .swiper-slide.slide-02 .justify-item{
+    	/* put it on top */
+   justify-content: flex-start !important;
+	padding-top:10rem
+	/* put it on center */
+/*    align-items: center !important; */
+	/* put it on botom */
+/* 	align-items: center !important; */
+}
+.main-section .mySwipera .swiper-slide.slide-02 p{
+   text-align: right;
+}
+
+
+.mobile-slider .swiper-slide.slide-03 h2 {
+    color: white;
+}
+
+.mobile-slider .swiper-slide.slide-03 p {
+    color: white;
+}
+.main-section .swiper-slide.slide-03 h2 {
+    color: white;
+}
+
+.main-section .swiper-slide.slide-03 p {
+    color: white;
+}
+
+.main-section .swiper-slide.slide-03 .has-underline {
+    color: #8bce6f;
+}
+
+.main-section .swiper-slide.slide-03 .has-underline::after {
+    background-color: #8bce6f;
+}
+
+.main-section .mySwipera .swiper-slide.slide-03 .paddig-custom{
+   padding-right: 5rem;
+   padding-left: 5rem;
+}
+.main-section .mySwipera .swiper-slide.slide-03 .items-align{
+   align-items: flex-start;
+}
+
+.main-section .mySwipera .swiper-slide.slide-03  .justify-item{
+   	/* put it on top */
+   justify-content: flex-start !important;
+	padding-top:10rem
+	/* put it on center */
+/*    align-items: center !important; */
+	/* put it on botom */
+/* 	align-items: center !important; */
+
+}
+.main-section .mySwipera .swiper-slide.slide-03 p{
+   text-align: right;
+}
+
+
+
+.mobile-slider .swiper-slide.slide-04 h2 {
+    color: white;
+}
+
+.mobile-slider .swiper-slide.slide-04 p {
+    color: white;
+}
+.main-sectionr .swiper-slide.slide-04 h2 {
+    color: white;
+}
+
+.main-section .swiper-slide.slide-04 p {
+    color: white;
+	text-align:left;
+	
+}
+
+.main-section .swiper-slide.slide-04 .has-underline {
+    color: #ffc122;
+}
+
+.main-section .swiper-slide.slide-04 .has-underline::after {
+    background-color: #ffc122;
+}
+
+
+.main-section .mySwipera .swiper-slide.slide-04 .paddig-custom{
+   padding-right: 1rem;
+   padding-left: 5rem;
+}
+.main-section .mySwipera .swiper-slide.slide-04 .items-align{
+   align-items: flex-end;
+}
+.main-section .mySwipera .swiper-slide.slide-04 .justify-item{
+  	/* put it on top */
+   justify-content: flex-end !important;
+	padding-top:10rem
+	/* put it on center */
+/*    align-items: center !important; */
+	/* put it on botom */
+/* 	align-items: center !important; */
+
+}
+.main-section .mySwipera .swiper-slide.slide-04 p{
+  text-align: left;
+}
+
+
+.mobile-slider .swiper-slide.slide-05 h2 {
+    color: white;
+}
+
+.mobile-slider .swiper-slide.slide-05 p {
+    color: white;
+}
+.main-section .swiper-slide.slide-05 h2 {
+    color: white;
+}
+
+.main-section .swiper-slide.slide-05 p {
+    color: white;
+
+}
+
+.main-section .swiper-slide.slide-05 .has-underline {
+    color: #f6cc2c;
+}
+
+.main-section .swiper-slide.slide-05 .has-underline::after {
+    background-color: #f6cc2c;
+}
+
+
+.main-section .mySwipera .swiper-slide.slide-05 .paddig-custom{
+   padding-right: 1rem;
+   padding-left: 5rem;
+}
+.main-section .mySwipera .swiper-slide.slide-05 .items-align{
+   align-items: flex-end;
+}
+.main-section .mySwipera .swiper-slide.slide-05 .justify-item{
+	/* put it on top */
+   justify-content: flex-end !important;
+	text-align:left;
+	padding-bottom:10rem
+	/* put it on center */
+/*    align-items: center !important; */
+	/* put it on botom */
+/* 	align-items: center !important; */
+
+}
+.main-section .mySwipera .swiper-slide.slide-05 p{
+   text-align: left;
+}
+
+
+
+.mobile-slider .swiper-slide.slide-06 h2 {
+    color: white;
+}
+
+.mobile-slider .swiper-slide.slide-06 p {
+    color: white;
+}
+.main-section .swiper-slide.slide-06 h2 {
+    color: white;
+}
+
+.main-section .swiper-slide.slide-06 p {
+    color: white;
+}
+.main-section .swiper-slide.slide-06 .has-underline {
+    color: #ffc85b;
+}
+
+.main-section .swiper-slide.slide-06 .has-underline::after {
+    background-color: #ffc85b;
+}
+
+
+.main-section .mySwipera .swiper-slide.slide-06 .paddig-custom{
+   padding-right: 5rem;
+   padding-left: 1rem;
+}
+.main-section .mySwipera .swiper-slide.slide-06 .items-align{
+   align-items: flex-start;
+}
+.main-section .mySwipera .swiper-slide.slide-06 .justify-item{
+	/* put it on top */
+   justify-content: flex-start !important;
+	padding-top:10rem
+	/* put it on center */
+/*    align-items: center !important; */
+	/* put it on botom */
+/* 	align-items: center !important; */
+
+}
+.main-section .mySwipera .swiper-slide.slide-06 p{
+  text-align: right;
+}
+
+/* in slider mobile version put padding at top of each slide biger number move text upper */
+.pb-28{
+	padding-bottom:2rem !important;
+}
+
+
+
+
+
+
+
