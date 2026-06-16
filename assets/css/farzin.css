@@ -226,11 +226,11 @@
    padding-left: 5rem;
 }
 .main-section .mySwipera .swiper-slide.slide-05 .items-align{
-   align-items: flex-end;
+   align-items: flex-start;
 }
 .main-section .mySwipera .swiper-slide.slide-05 .justify-item{
 	/* put it on top */
-   justify-content: flex-end !important;
+   justify-content: flex-start !important;
 	text-align:left;
 	padding-bottom:10rem
 	/* put it on center */
