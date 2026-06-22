@@ -56,7 +56,7 @@ get_header();
                         $image = get_field("thirdslider");
                         ?>
                         <img src="<?= $image['url'] ?>" alt="<?= $image['alt'] ?>">
-                        <div class="absolute w-full h-full flex flex-wrap items-center justify-start z-10 top-0 left-0 ">
+                        <div class="absolute w-full h-full flex flex-wrap items-center justify-item z-10 top-0 left-0 ">
                             <div class="w-1/2 md:w-1/2 flex flex-col paddig-custom items-align justify-center h-full">
                                 <?= the_field("sliderthirdtext") ?>
                                 <?php
@@ -1070,7 +1070,7 @@ get_header();
                                     }
                                     ?>
                                     <div class="card-over">
-                                        <img src="<?= get_template_directory_uri() ?>/assets/images/projects/project-04.png" alt="project">
+                                        <img src="<?= get_template_directory_uri() ?>/assets/images/projects/project-05.png" alt="project">
                                         <div class="w-full">
                                             <h2 class="mt-12 md:mt-1">
                                                 <?= get_the_title($link->ID) ?>
@@ -1100,7 +1100,7 @@ get_header();
                                     }
                                     ?>
                                     <div class="card-over">
-                                        <img src="<?= get_template_directory_uri() ?>/assets/images/projects/project-04.png" alt="project">
+                                        <img src="<?= get_template_directory_uri() ?>/assets/images/projects/project-06.png" alt="project">
                                         <div class="w-full">
                                             <h2 class="mt-12 md:mt-1">
                                                 <?= get_the_title($link->ID) ?>
@@ -1130,7 +1130,7 @@ get_header();
                                     }
                                     ?>
                                     <div class="card-over">
-                                        <img src="<?= get_template_directory_uri() ?>/assets/images/projects/project-04.png" alt="project">
+                                        <img src="<?= get_template_directory_uri() ?>/assets/images/projects/project-07.png" alt="project">
                                         <div class="w-full">
                                             <h2 class="mt-12 md:mt-1">
                                                 <?= get_the_title($link->ID) ?>
@@ -1160,7 +1160,7 @@ get_header();
                                     }
                                     ?>
                                     <div class="card-over">
-                                        <img src="<?= get_template_directory_uri() ?>/assets/images/projects/project-04.png" alt="project">
+                                        <img src="<?= get_template_directory_uri() ?>/assets/images/projects/project-08.png" alt="project">
                                         <div class="w-full">
                                             <h2 class="mt-12 md:mt-1">
                                                 <?= get_the_title($link->ID) ?>
@@ -1190,7 +1190,7 @@ get_header();
                                     }
                                     ?>
                                     <div class="card-over">
-                                        <img src="<?= get_template_directory_uri() ?>/assets/images/projects/project-04.png" alt="project">
+                                        <img src="<?= get_template_directory_uri() ?>/assets/images/projects/project-09.png" alt="project">
                                         <div class="w-full">
                                             <h2 class="mt-12 md:mt-1">
                                                 <?= get_the_title($link->ID) ?>
@@ -1220,7 +1220,7 @@ get_header();
                                     }
                                     ?>
                                     <div class="card-over">
-                                        <img src="<?= get_template_directory_uri() ?>/assets/images/projects/project-04.png" alt="project">
+                                        <img src="<?= get_template_directory_uri() ?>/assets/images/projects/project-10.png" alt="project">
                                         <div class="w-full">
                                             <h2 class="mt-12 md:mt-1">
                                                 <?= get_the_title($link->ID) ?>
@@ -1246,26 +1246,36 @@ get_header();
         </h2>
         <div class="flex flex-wrap">
             <?php
-            $args = array(
-                'post_type' => 'costomerbrandlogos',
-                'order' => 'asc',
-                'posts_per_page' => 24
-            );
-            $productsLoop = new WP_Query($args);
-            if ($productsLoop->have_posts()) {
-                global $post;
-                while ($productsLoop->have_posts()) : $productsLoop->the_post();
-            ?>
-                    <div class="w-1/3 md:w-1/7 p-4">
-                        <div class="bg-white">
-                            <?= the_post_thumbnail('medium'); ?>
-                        </div>
+                $args = array(
+                    'post_type'      => 'costomerbrandlogos',
+                    'order'          => 'ASC',
+                    'posts_per_page' => -1
+                );
+
+                $productsLoop = new WP_Query($args);
+
+                if ($productsLoop->have_posts()) :
+                    $count = 0;
+
+                    while ($productsLoop->have_posts()) :
+                        $productsLoop->the_post();
+
+                        $hidden = ($count >= 21) ? 'hidden-logo hidden' : '';
+                ?>
+
+                <div class="w-1/3 md:w-1/7 p-4 <?= $hidden; ?>">
+                    <div>
+                        <?php the_post_thumbnail('medium'); ?>
                     </div>
-            <?php
+                </div>
+
+                <?php
+                        $count++;
+                    endwhile;
+
                     wp_reset_postdata();
-                endwhile;
-            }
-            ?>
+                endif;
+                ?>
         </div>
         <a href="#" class="seemorecustomer" id="seemorecustomer">
             مشاهده همه

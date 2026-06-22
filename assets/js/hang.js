@@ -159,10 +159,10 @@ document.addEventListener('DOMContentLoaded', () => {
             // pagination: {
             //     el: ".swiper-pagination",
             // },
-            // autoplay: {
-            //     delay: 2500,
-            //     disableOnInteraction: false,
-            // },
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
         });
     }
     var mySwiperamob = document.querySelector(".mySwiperamob");
@@ -176,10 +176,10 @@ document.addEventListener('DOMContentLoaded', () => {
             //  pagination: {
             //    el: ".swiper-pagination",
             //    },
-            // autoplay: {
-            //     delay: 2500,
-            //     disableOnInteraction: false,
-            // },
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
         });
     }
     var mySwipera = document.querySelector(".brandsSwiper");
@@ -195,10 +195,10 @@ document.addEventListener('DOMContentLoaded', () => {
             pagination: {
                 el: ".swiper-pagination",
             },
-            // autoplay: {
-            //     delay: 2500,
-            //     disableOnInteraction: false,
-            // },
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
             breakpoints: {
                 640: {
                     slidesPerView: 2,
@@ -228,10 +228,10 @@ document.addEventListener('DOMContentLoaded', () => {
             pagination: {
                 el: ".swiper-pagination",
             },
-            // autoplay: {
-            //     delay: 3500,
-            //     disableOnInteraction: false,
-            // },
+            autoplay: {
+                delay: 3500,
+                disableOnInteraction: false,
+            },
             breakpoints: {
                 640: {
                     slidesPerView: 1,
@@ -293,10 +293,10 @@ document.addEventListener('DOMContentLoaded', () => {
             loop: true,
             spaceBetween: 10,
             loop: true,
-            // autoplay: {
-            //     delay: 1500,
-            //     disableOnInteraction: false,
-            // },
+            autoplay: {
+                delay: 1500,
+                disableOnInteraction: false,
+            },
             breakpoints: {
                 640: {
                     slidesPerView: 1,

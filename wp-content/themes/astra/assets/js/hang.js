@@ -18,6 +18,23 @@ document.addEventListener('DOMContentLoaded', () => {
     let mobileoldsrc;
     let end;
     let primaryMenu = document.querySelector(".primary");
+    let seemorecustomer = document.getElementById('seemorecustomer');
+    if (seemorecustomer) {
+        console.log("seemorecustomer" , seemorecustomer);
+        seemorecustomer.addEventListener('click', function (e) {
+            e.preventDefault();
+            seemorecustomer.classList.toggle("showmore");
+            document.querySelectorAll('.hidden-logo').forEach(function (item) {
+                item.classList.toggle('hidden');
+            });
+            if(seemorecustomer.getAttribute("class").includes("showmore")){
+                    seemorecustomer.innerText = "مشاهده تعداد کمتر";
+            }else{
+                   seemorecustomer.innerText = "مشاهده همه";
+            }
+        });
+    }
+
     if (primaryMenu) {
         let menus = primaryMenu.querySelectorAll("li a");
         if (menus.length > 0) {
@@ -147,7 +164,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
     }
-    
+
     var mySwipera = document.querySelector(".mySwipera");
     if (mySwipera) {
         var swiper = new Swiper(".mySwipera", {
@@ -324,12 +341,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
     }
-    let seemorecustomer = document.getElementById("seemorecustomer");
     let morecustomer = document.getElementById("morecustomer");
-    if (seemorecustomer) {
-        seemorecustomer.addEventListener("click", e => {
-            e.preventDefault();
-            morecustomer.classList.toggle("hidden");
-        })
-    }
+
 });
